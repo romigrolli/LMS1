@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Boobstrap CSS-->
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- Option 1: Include in HTML -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+		integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+	<link href="style.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<title> Home page Layout-Bootstrap</title>
+
+</head>
+
+<body>
+	<!--Navbar-->
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+		<div class="container">
+			<a href="#" class="navbar-brand">
+				<img src="logo.png" alt="" width="30" height="24">
+				Salem Community Theater</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="#home" class="nav-link">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#about" class="nav-link">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="#auditions" class="nav-link">Auditions</a>
+					</li>
+					<li class="nav-item">
+						<a href="#currshows" class="nav-link">Current Show</a>
+					</li>
+					<li class="nav-item">
+						<a href="#questions" class="nav-link">Questions</a>
+					</li>
+					<!--
+				<li class="nav-item">
+					<a href="#pastshows" class="nav-link">Past Shows</a>
+				</li>-->
+					<li class="nav-item">
+						<a href="#programs" class="nav-link">Programs</a>
+					</li>
+					<li class="nav-item">
+						<a href="#upcoming" class="nav-link">Upcoming</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<!--Showcase-->
+	<section id="home" class="bg-dark text-light p-5 text-center text-sm-start">
+		<div class="container">
+			<div class="d-sm-flex align-items-center justify-content-between">
+				<div>
+					<h1>
+						Welcome to <span class="text-info"> Salem Community Theater
+
+						</span>
+					</h1>
+					<p class="lead my-4">
+						~Established 2017~
+					</p>
+
+				</div>
+				<img class="img-fluid w-50 d-none d-sm-block" src="Salem.jpg" alt="#" />
+			</div>
+		</div>
+	</section>
+
+	<!--Boxes-->
+	<section class="p-5">
+		<div class="container">
+			<div class="row text-center g-4">
+				<div class="col-md">
+					<!--Boxes information and the use the icons-->
+					<div class="card bg-dark text-light">
+						<div class="card-body text-center">
+							<div class="h1 mb-3">
+								<i class="bi bi-people"></i>
+							</div>
+							<h3 class="card-title mb-3">
+								Previous Shows
+							</h3>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, minus?
+							</p>
+							<a href="#previous" class="btn btn-primary"> Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="card bg-secondary text-light">
+						<div class="card-body text-center">
+							<div class="h1 mb-3">
+								<i class="bi bi-person-badge"></i>
+							</div>
+							<h3 class="card-title mb-3">
+								Ticket Info
+							</h3>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, minus?
+							</p>
+							<a href="https://www.showtix4u.com/events/salemut" target="_blank" class="btn btn-primary">
+								<span class="wsite-button-inner"> Tickets</span>
+							</a>
+							<div style="display: block; font-size: 90%;">
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="card bg-dark text-light">
+						<div class="card-body text-center">
+							<div class="h1 mb-3">
+								<i class="bi bi-camera"></i>
+							</div>
+							<h3 class="card-title mb-3">
+								Pictures
+							</h3>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, minus?
+							</p>
+							<a href="#" class="btn btn-primary"> View</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!--About Us-->
+	<section id="about" class="p-5">
+		<div clas s="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-md">
+					<img src="logo.png" class="img-fluid" alt="">
+				</div>
+				<div class="col-md p-5">
+					<h2>About Us</h2>
+					<p class="lead">
+						Extablished in 2017, Salem Community Theater is located in the growing community
+						of Salem City, Utah.
+					</p>
+					<p>
+						Our mission is to unite our community by creating inclusive safe oportunities to participate
+						in and enjpy wholesome quality theater.
+
+					</p>
+					<a href="#" class="btn btn-light mt-3">
+						<i class="bi bi-chevron-right"></i> Read More</a>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Announcements-->
+	<section id="upcoming" class="p-5 bg-dark text-light">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+
+				<div class="col-md p-5">
+					<h2>Announcing Our 2022/2023 Season</h2>
+					<p class="lead">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, minus?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Laboriosam minima quas pariatur, unde quidem nam quam sint.
+						Blanditiis, modi. Autem accusamus sint porro modi quod ad
+						eos deserunt beatae? Voluptatem?
+
+					</p>
+					<a href="#" class="btn btn-light mt-3">
+						<i class="bi bi-chevron-right"></i> Read More</a>
+				</div>
+				<div class="col-md">
+					<img src="season.png" class="img-fluid" alt="">
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!--Auditions-->
+	<section id="auditions" class="p-5">
+		<div clas s="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-md">
+					<img src="audition2.png" class="img-fluid p-5" alt="">
+				</div>
+				<div class="col-md p-5">
+					<h2>Auditions</h2>
+					<p class="lead">
+						Sign Up for Audition for "Old Time Rock'n Roll" !
+					</p>
+					<p>
+						Auditions for "Old Time Rock 'N Roll — A Musical Review" will be held March 1st and 2nd at Mt.
+						Loafer Elementary. The button above will be activated soon.
+						Auditions for Oliver are scheduled for May 12th and 13th.
+						Please check back here or follow us on social media for the date announcement and links.
+
+					</p>
+					<button class="btn btn-primary btn-lg " data-bs-toggle="modal" data-bs-target="#enroll">
+						Auditions Enrollment</button>
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!--Current Shows-->
+	<section id="currshows" class="p-5 bg-dark text-light">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+
+				<div class="col-md p-5">
+					<h2>Spring 2023</h2>
+					<p class="lead">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, minus?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Laboriosam minima quas pariatur, unde quidem nam quam sint.
+						Blanditiis, modi. Autem accusamus sint porro modi quod ad
+						eos deserunt beatae? Voluptatem?
+
+					</p>
+					<a href="#" class="btn btn-light mt-3">
+						<i class="bi bi-chevron-right"></i> Read More</a>
+				</div>
+				<div class="col-md">
+					<img src="TimeRock.jpg" class="img-fluid" alt="">
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section id="currshows" class="p-5 ">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-sm">
+					<img src="Oliver .png" class="img-fluid" alt="">
+				</div>
+				<div class="col-md p-5">
+					<h2>Summer 2023</h2>
+					<p class="lead">
+						Sypnopsis
+					</p>
+					<p>
+						Bringing Charles Dickens’ beloved novel to life, Lionel Bart’s Oliver! takes audiences on a wild
+						adventure through Victorian England. Join young,orphaned Oliver Twist as he navigates the
+						London’s underworld of theft and violence, searching for a home, a family, and - most
+						importantly - for love. When Oliver is picked up on the street by a boy named the Artful Dodger,
+						he is welcomed into a gang of child pickpockets led by the conniving, but charismatic, Fagin.
+						When Oliver is falsely accused of a theft he didn’t commit, he is rescued by a kind and wealthy
+						gentleman, to the dismay of Fagin’s violent sidekick, Bill Sikes. Caught in the middle is the
+						warm-hearted Nancy, who is trapped under Bill’s thumb, but desperate to help Oliver, with tragic
+						results. With spirited, timeless songs like “As Long as He Needs Me,” “Food, Glorious Food,” and
+						“Where Is Love,” Oliver! is a musical classic.
+
+					</p>
+					<a href="#" class="btn btn-light mt-3">
+						<i class="bi bi-chevron-right"></i> Read More</a>
+				</div>
+
+
+			</div>
+
+		</div>
+	</section>
+	<!-- Programs-->
+	<section id="programs" class="p-5 bg-dark text-light">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+
+				<div class="col-md p-5">
+					<h2>Programs</h2>
+					<p class="lead">
+						Download the PDF or view the program below.
+						Past Programs still available just scroll down.
+
+					</p>
+					<p>
+						If you enjoyed the show, please leave a comment or review on our
+						facebook page. Thank you!
+
+					</p>
+					<a href="#" class="btn btn-light mt-3">
+						<i class="bi bi-chevron-right"></i> Read More</a>
+				</div>
+				<div class="col-md">
+					<img src="program.png" class="img-fluid" alt="">
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!--Previous  Shows Pages-->
+	<section id="previous" class="p-5 ">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-sm">
+					<img src="My project-1.png" class="img-fluid" alt="">
+				</div>
+				<div class="col-md p-5">
+					<h2>Previous Shows Info</h2>
+					<p class="lead">
+						Performances
+					</p>
+
+					<div class="accordion-flush">
+						<div class="accordion accordion-flush" id="performance">
+							<!--Performance #1 birdie-->
+							<div class=" accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#performance-one">
+										Bye Bye Birdie(Summer 2017)
+									</button>
+								</h2>
+								<!--Table + accordion-->
+								<div id="performance-one" class="accordion-collapse collapse"
+									data-bs-parent="performance">
+									<div class="accordion-body text-dark">
+										<table class="table table-striped table-hover ">
+											<thead class="fs-6">
+												<tr>
+													<th scope="col">#</th>
+													<th scope="col">Character</th>
+													<th scope="col">Part</th>
+													<th scope="col">Vocal Part(s)</th>
+												</tr>
+											</thead>
+											<tbody class="fs-6">
+												<tr>
+													<th scope="row">1</th>
+													<td>Albert Peterson</td>
+													<td>Lead</td>
+													<td>Bass-Baritone</td>
+												</tr>
+												<tr>
+													<th scope="row">2</th>
+													<td>Conrad Birdie.</td>
+													<td>Lead</td>
+													<td>Baritone</td>
+												</tr>
+												<tr>
+													<th scope="row">3</th>
+													<td>Mr. Harry MacAffe</td>
+													<td> Lead</td>
+													<td>Baritone</td>
+												</tr>
+												<tr>
+													<th scope="row">4</th>
+													<td>Randolph MacAffe</td>
+													<td>Lead</td>
+													<td>Baritone</td>
+												</tr>
+												<tr>
+													<th scope="row">5</th>
+													<td>Rosie Alvar.</td>
+													<td>Lead</td>
+													<td>Me-Soprano</td>
+												</tr>
+												<tr>
+													<th scope="row">6</th>
+													<td>Kim MacAffe</td>
+													<td> Lead</td>
+													<td>Soprano</td>
+												</tr>
+												<tr>
+													<th scope="row">7</th>
+													<td>Mrs. Mae Peterson</td>
+													<td>Supporting</td>
+													<td>Spoken</td>
+												</tr>
+												<tr>
+													<th scope="row">8</th>
+													<td>Hugo Peabody</td>
+													<td>Supporting</td>
+													<td>Spoken</td>
+												</tr>
+												<tr>
+													<th scope="row">9</th>
+													<td>Ursula Merkle</td>
+													<td> Supporting</td>
+													<td>Me-Soprano</td>
+												</tr>
+												<tr>
+													<th scope="row">10</th>
+													<td>Helen</td>
+													<td>Featured</td>
+													<td>Soprano-Alto</td>
+												</tr>
+												<tr>
+													<th scope="row">11</th>
+													<td>Nancy</td>
+													<td>Featured</td>
+													<td>Soprano-Alto</td>
+												</tr>
+												<tr>
+													<th scope="row">12</th>
+													<td>Alice</td>
+													<td>Featured</td>
+													<td>Soprano-Alto</td>
+
+												</tr>
+												<tr>
+													<th scope="row">13</th>
+													<td>Margie Ann</td>
+													<td>Featured</td>
+													<td>Me-Soprano</td>
+												</tr>
+												<tr>
+													<th scope="row">14</th>
+													<td>Penelope Ann</td>
+													<td>Featured</td>
+													<td>Soprano-Alto</td>
+												</tr>
+												<tr>
+													<th scope="row">15</th>
+													<td>Deborah Sue Merkle</td>
+													<td> Featured</td>
+													<td>Me-Soprano</td>
+												</tr>
+												<tr>
+													<th scope="row">16</th>
+													<td>Harvey Johnson</td>
+													<td>Featured</td>
+													<td>Baritone</td>
+												</tr>
+												<tr>
+													<th scope="row">17</th>
+													<td>Freddie</td>
+													<td>Featured</td>
+													<td>Tenor,Baritone,Bass</td>
+												</tr>
+												<tr>
+													<th scope="row">18</th>
+													<td>Karl</td>
+													<td>Featured</td>
+													<td>Tenor,Baritone,Bass</td>
+												</tr>
+												<tr>
+													<th scope="row">19</th>
+													<td>Gloria Rasputin</td>
+													<td>Featured</td>
+													<td>Spoken</td>
+												</tr>
+												<tr>
+													<th scope="row">20</th>
+													<td>Charles F. Maude</td>
+													<td>Featured</td>
+													<td>Tenor</td>
+												</tr>
+												<tr>
+													<th scope="row">21</th>
+													<td>Maude's First Customer</td>
+													<td>Featured</td>
+													<td>Bass</td>
+												</tr>
+												<tr>
+													<th scope="row">22</th>
+													<td>Maude's Dishwasher</td>
+													<td>Featured</td>
+													<td>Tenor</td>
+												</tr>
+												<tr>
+													<th scope="row">23</th>
+													<td>Maude's Second Customer</td>
+													<td>Featured</td>
+													<td>Bass</td>
+												</tr>
+												<tr>
+													<th scope="row">24</th>
+													<td>Mayor</td>
+													<td>Featured</td>
+													<td>Spoken</td>
+												</tr>
+												<tr>
+													<th scope="row">25</th>
+													<td>Edna</td>
+													<td>Featured</td>
+													<td>Spoken</td>
+												</tr>
+												<tr>
+													<th scope="row">26</th>
+													<td>Lee</td>
+													<td>Ensemble</td>
+													<td>Spoken</td>
+												</tr>
+												<tr>
+													<th scope="row">27</th>
+													<td>Phyllis</td>
+													<td>Ensemble</td>
+													<td>Spoken</td>
+												</tr>
+												<tr>
+													<th scope="row">28</th>
+													<td>Ensemble</td>
+													<td>Ensemble</td>
+													<td>Tenor,Baritone,Bass,Soprano,Alto,Me-Soprano</td>
+												</tr>
+
+											</tbody>
+
+										</table>
+
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#performance-two">
+										Hello Dolly(Summer 2018)
+									</button>
+								</h2>
+								<div id="performance-two" class="accordion-collapse collapse"
+									data-bs-parent="performance">
+									<div class="accordion-body text-dark">
+										<table class="table  table-striped table-hover">
+											<thead>
+												<tr>
+													<th scope="col">#</th>
+													<th scope="col">Character</th>
+													<th scope="col">Part</th>
+													<th scope="col">Vocal Part(s)</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">1</th>
+													<td>Irene Molloy</td>
+													<td>Lead</td>
+													<td>Soprano</td>
+												</tr>
+												<tr>
+													<th scope="row">2</th>
+													<td>Dolly Gallagher Levi</td>
+													<td>Lead</td>
+													<td>Me-Soprano</td>
+												</tr>
+												<tr>
+													<th scope="row">3</th>
+													<td>Corneliua Hackl</td>
+													<td>Lead</td>
+													<td>Bass-Baritone</td>
+												</tr>
+												<tr>
+													<th scope="row">4</th>
+													<td>Horace Vandergelder</td>
+													<td>Supporting</td>
+													<td>Baritone</td>
+												</tr>
+												<tr>
+													<th scope="row">5</th>
+													<td>Barnaby Tucker</td>
+													<td>Supporting</td>
+													<td>Baritone</td>
+												</tr>
+												<tr>
+													<th scope="row">6</th>
+													<td>Minnie Fay</td>
+													<td>Supporting</td>
+													<td>Me-Soprano</td>
+												</tr>
+												<tr>
+													<th scope="row">7</th>
+													<td>Ambrose Kemper</td>
+													<td>Featured</td>
+													<td>Tenor</td>
+												</tr>
+												<tr>
+													<th scope="row">8</th>
+													<td>Rudolph Reisenweber</td>
+													<td>Featured</td>
+													<td>Bass</td>
+												</tr>
+												<tr>
+													<th scope="row">9</th>
+													<td>Mrs. Rose</td>
+													<td>Featured</td>
+													<td>Alto</td>
+												</tr>
+												<tr>
+													<th scope="row">10</th>
+													<td>Judge</td>
+													<td>Featured</td>
+													<td>Spoken</td>
+												</tr>
+												<tr>
+													<th scope="row">11</th>
+													<td>Jacob</td>
+													<td>Thornton</td>
+													<td>@fat</td>
+												</tr>
+												<tr>
+													<th scope="row">12</th>
+													<td>Ermengarde</td>
+													<td>Featured</td>
+													<td>Me-Soprano</td>
+												</tr>
+												<tr>
+													<th scope="row">13</th>
+													<td>Waiters</td>
+													<td>Ensemble</td>
+													<td></td>
+												</tr>
+												<tr>
+													<th scope="row">14</th>
+													<td>Ensemble</td>
+													<td>Ensemble</td>
+													<td></td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#performance-three">
+										Seven Brides for Seven Brothers(Summer 2019)
+									</button>
+								</h2>
+								<div id="performance-three" class="accordion-collapse collapse"
+									data-bs-parent="performance">
+									<div class="accordion-body text-dark">
+										Will be update soon.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#performance-four">
+										Sleppy Hollow(Fall 2019)
+									</button>
+								</h2>
+								<div id="performance-four" class="accordion-collapse collapse"
+									data-bs-parent="performance">
+									<div class="accordion-body text-dark">
+										Will be update soon.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#performance-five">
+										Night of Classic Broadway(Sring 2020)
+									</button>
+								</h2>
+								<div id="performance-five" class="accordion-collapse collapse"
+									data-bs-parent="performance">
+									<div class="accordion-body text-dark">
+										Will be update soon.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#performance-six">
+										A Family Night on Broadway(Spring 2021)
+									</button>
+								</h2>
+								<div id="performance-six" class="accordion-collapse collapse"
+									data-bs-parent="performance">
+									<div class="accordion-body text-dark">
+										Will be update soon.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#performance-seven">
+										Singin' in the Rain(Summer 2021)
+									</button>
+								</h2>
+								<div id="performance-seven" class="accordion-collapse collapse"
+									data-bs-parent="performance">
+									<div class="accordion-body text-dark">
+										Will be update soon.
+									</div>
+								</div>
+							</div>
+							<!--Fright Night at KSCT -->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#performance-eight">
+										Fright Night at KSCT Radio(Fall 2021)
+									</button>
+								</h2>
+								<div id="performance-eight" class="accordion-collapse collapse"
+									data-bs-parent="performance">
+									<div class="accordion-body text-dark">
+										Will be update soon.
+									</div>
+								</div>
+							</div>
+							<!-- The WiZard of OZ-->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#performance-nine">
+										The WiZard of OZ(Summer 2022)
+									</button>
+								</h2>
+								<div id="performance-nine" class="accordion-collapse collapse"
+									data-bs-parent="performance">
+									<div class="accordion-body text-dark">
+										Will be update soon.
+									</div>
+								</div>
+							</div>
+							<!--Fright Night At KSCT RAdio Cursed Water-->
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#performance-ten">
+										Fright Night At KSCT Radio Cursed Water(Fall 2022)
+									</button>
+								</h2>
+								<div id="performance-ten" class="accordion-collapse collapse"
+									data-bs-parent="performance">
+									<div class="accordion-body text-dark">
+										Will be update soon.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Contact/email-->
+
+	<section class="bg-primary text-light p-5">
+		<div class="container">
+			<div class="d-md-flex justify-content-between align-items-center">
+				<h3 class="mb-3 mb-md-0"> Subscribe for more information</h3>
+				<div class="input-group news-input">
+					<input type="text" class="form-control" placeholder="Enter Email" />
+					<button class="btn btn-dark btn-lg" type="button">Button</button>
+				</div>
+			</div>
+	</section>
+	<!--Common Questions-->
+	<section id="question" class="p-5 ">
+		<div class="container">
+			<h2 class="text-center mb-4">
+				Frequently Asked Questions
+			</h2>
+			<!-- Accordion style question-->
+			<div class="accordion-flush">
+				<div class="accordion accordion-flush" id="questions">
+					<!--Item 1-->
+					<div class=" accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#question-one">
+								Where exactly are you located?
+							</button>
+						</h2>
+						<div id="question-one" class="accordion-collapse collapse" data-bs-parent="questions">
+							<div class="accordion-body text-dark"> Salem, Utah 84653</div>
+						</div>
+					</div>
+					<!-- Item 2-->
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#question-two">
+								Do I need to get involve in every play?
+							</button>
+						</h2>
+						<div id="question-two" class="accordion-collapse collapse" data-bs-parent="questions">
+							<div class="accordion-body text-dark">No, you only participate in the play that you
+								cast
+								too.</div>
+						</div>
+					</div>
+					<!-- Item 3-->
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#question-three">
+								Is the play involve all my time?
+							</button>
+						</h2>
+						<div id="question-three" class="accordion-collapse collapse" data-bs-parent="questions">
+							<div class="accordion-body text-dark">No, you will have reharsal from
+								Tuesday-Friday.
+								Normally, around
+								3 hours a day.</div>
+						</div>
+					</div>
+					<!--Item 4-->
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#question-four">
+								How old I need to be to participate?
+							</button>
+						</h2>
+						<div id="question-four" class="accordion-collapse collapse" data-bs-parent="questions">
+							<div class="accordion-body text-dark">Participation age depend of the play. During
+								the
+								plays
+								in the
+								Fall and Spring, 14 years old is the minimun required age. In the Summer, the
+								minimun
+								age required is 8 years old.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!--Contact US-->
+	<section class="p-5">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-md">
+					<h2 class="text-center mb-4">Contact Info</h2>
+					<ul class="list-group list-group-flush lead">
+						<li class="list-group-item">
+							<span class="fw-bold">Main Location:</span> 151 West 300 South Salem, UT </li>
+						<li class="list-group-item">
+							<span class="fw-bold">Phone Number:</span> (801) 423-2770 </li>
+					</ul>
+				</div>
+				<div class="cold-md">
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!---Footer-->
+	<footer class="p-5 bg-dark text-white text-center position-relative">
+		<div class="contain">
+			<p class="lead">Copyright &copy; 2023 by Romina Owens</p>
+			<a href="#" class="position-absolute bottom-0 end-0 p-5"></a>
+			<i class="bi bi-arrow-up-circle h1"></i>
+		</div>
+
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="enroll" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="enroll">Audition Sign-up</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<p class="lead">Fill out this form and we will get back to you. Auditions for
+						"Old Time Rock Rock'N - A Musical Review" will be held in March 2023.</p>
+					<form>
+						<div class="mb-3">
+							<label for="first-name" class="col-form-label">
+								First Name:
+							</label>
+							<input type="text" class="form-control" id="first-name">
+							<label for="last-name" class="col-form-label">
+								Last Name:
+							</label>
+							<input type="text" class="form-control" id="last-name">
+							<label for="email" class="col-form-label">
+								Email:
+							</label>
+							<input type="text" class="form-control" id="email">
+							<label for="age" class="col-form-label">
+								Age:
+							</label>
+							<input type="text" class="form-control" id="age">
+							<label for="character" class="col-form-label">
+								Character/s will you like to audition:
+							</label>
+							<input type="text" class="form-control" id="character">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+		</script>
+</body>
+
+</html>
